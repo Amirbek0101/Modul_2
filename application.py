@@ -10,7 +10,7 @@ st.markdown(page_description)
 matn = st.text_input("Ingliz tilida soz kiriting:")
 
 # Model va vektorizatorni yuklash
-with open("C:\\Suniy 2\\sentiment_model.pkl", "rb") as fl:
+with open("sentiment_model.pkl", "rb") as fl:
     pr = pickle.load(fl)
 
 with open("C:\\Suniy 2\\vectorizer.pkl", "rb") as vec_file:
