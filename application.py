@@ -13,7 +13,7 @@ matn = st.text_input("Ingliz tilida soz kiriting:")
 with open("sentiment_model.pkl", "rb") as fl:
     pr = pickle.load(fl)
 
-with open("C:\\Suniy 2\\vectorizer.pkl", "rb") as vec_file:
+with open("vectorizer.pkl", "rb") as vec_file:
     vectorizer = pickle.load(vec_file)
 
 # Tekshirish tugmasi
