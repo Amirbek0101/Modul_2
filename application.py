@@ -6,7 +6,8 @@ page_description = """Bu model so'zlarni sentimentga ajratadi"""
 st.markdown(page_description)
 
 model = None
-matn = st.number_input("Ingliz tilida soz kiriting", min_value=0.0, max_value=30.0, step=1.0, value=.00)
+
+matn = st.text_input("Ingliz tilida soz kiriting:")
 
 with open("sentiment_model.pkl","rb") as fl:
     pr = pickle.load(fl)
